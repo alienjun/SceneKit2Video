@@ -12,7 +12,7 @@ import Photos
 public class PhotosUtil {
     static let saveQueue = DispatchQueue(label: "net.colordeaf.SceneKit2Video.SaveVideos")
     
-    static func saveVideo(at url: URL, andThen: @escaping () -> ()) {
+    public static func saveVideo(at url: URL, andThen: @escaping () -> ()) {
         assert(FileUtil.fileExists(at: url), "Check for file output!")
         
         PhotosUtil.saveQueue.async {
