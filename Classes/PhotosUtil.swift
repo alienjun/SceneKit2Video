@@ -9,7 +9,7 @@
 import Foundation
 import Photos
 
-class PhotosUtil {
+public class PhotosUtil {
     static let saveQueue = DispatchQueue(label: "net.colordeaf.SceneKit2Video.SaveVideos")
     
     static func saveVideo(at url: URL, andThen: @escaping () -> ()) {
